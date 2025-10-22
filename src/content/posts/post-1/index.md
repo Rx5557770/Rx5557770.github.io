@@ -4,7 +4,8 @@ published: 2025-10-22
 description: 通过Astro + Github Pages 部署静态博客
 image: 1761117983463.png
 tags:
-  - tag1
+  - Astro
+  - Github-Pages
 category: 建站记录
 draft: false
 lang: zh-CN
