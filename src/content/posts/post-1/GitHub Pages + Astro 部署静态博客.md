@@ -1,18 +1,15 @@
+
 ---
-title: 通过Astro + Github Pages 部署静态博客
-published: 2025-10-22
-description: 通过Astro + Github Pages 部署静态博客
-image: 1761117983463.png
-tags:
-  - Astro
-  - Github-Pages
-category: 建站记录
+title: GitHub Pages + Astro 部署静态博客
+published: 2025-10-24
+description: 免服务器/域名运行你的博客！
+image: ''
+tags: ['code', 'github pages', 'astro']
+category: 代码日常
 draft: false
 lang: zh-CN
 ---
-
----
-
+    
 ## 前言
 
 通过GitHub Pages + Astro 部署的静态博客**无需自备服务器+域名**，将本地文件与互联网相通。类似的项目还有很多。
@@ -39,11 +36,11 @@ ssh-keygen -t rsa -b 4096 -C "email@example.com"
 
 添加一个仓库然后设置名称为 `github用户名.github.io`，用户名填自己的。这个就是域名。
 
-![](1761122556681.png)
+![](./assets/IMG-20251023205405790.png)
 
 在用户设置中，如下粘贴刚刚的公钥。
 
-![](1761123664865.png)
+![](./assets/IMG-20251023205405888.png)
 
 ---
 
@@ -53,7 +50,7 @@ ssh-keygen -t rsa -b 4096 -C "email@example.com"
 npm create fuwari@latest
 ```
 
-![](1761121576008.png)
+![](./assets/IMG-20251023205405973.png)
 
 ### 配置
 
@@ -63,13 +60,13 @@ npm create fuwari@latest
   找到 astro.config.mjs 配置 base 和 site，site设置为刚刚的域名。
 - 有自己的域名：如下图配置
 
-![|520x233](1761122361493.png)
+![|520x233](./assets/IMG-20251023205406089.png)
 
 文章路径在 `src/content/posts/` 
 左侧边栏以及头部信息路径在 `src/config.ts`
 修改后，通过 `npm run dev` 即可启动。
 
-![](1761117983463.png)
+![](./assets/IMG-20251023205406261.png)
 
 
 ### 通过git命令对接GitHub仓库
@@ -95,12 +92,12 @@ git push -u origin main
 
 上传后点设置，配置Action
 
-![](1761123932490.png)
+![](./assets/IMG-20251023205406352.png)
 
 > [!TIP]
 > 也可以填写自己的自定义域名，不过我也不清楚为什么这里一直黄色。（虽然自定义域名也能用emmm），如果你有自定义于域名，那么可以通过CNAME解析到username.github.io做解析。
 
-![](1761124033354.png)
+![](./assets/IMG-20251023205406450.png)
 
 ## 后续维护
 
