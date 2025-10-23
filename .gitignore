@@ -33,3 +33,4 @@ yarn.lock
 # 排除obsidian
 src/content/.obsidian/
 src/content/Templates/
+Thumbs.db
